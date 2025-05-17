@@ -1,0 +1,168 @@
+aside{
+    padding: 10px;
+    background-color: white;
+    width: max-content;
+    border: 1px solid rgb(195, 195, 195);
+    height: max-content;
+    border-radius: 5px;
+    grid-column: 1/2;
+}
+aside ul li{
+    list-style: none;
+}
+aside ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: 0.2s ease-in;
+    border-radius: 5px;
+}
+aside ul li a:hover{
+    background-color: #3e5b3f;
+    color: white;
+    transition: 0.2s ease-in;
+}
+.title-cate{
+    font-weight: bold;
+    padding: 10px 15px;
+}
+aside form{
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+aside form input{
+    border: 1px solid rgb(195, 195, 195);
+    padding: 10px;
+    border-radius: 5px;
+}
+aside form button{
+    background-color: #3e5b3f;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+aside form button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-out;
+}
+.shop-main{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 50px;
+}
+article{
+    grid-column: 2/6;
+}
+.search-fillter-des{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-fillter-des form {
+    position: relative;
+}
+.search-fillter-des form input{
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+.search-fillter-des form button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: white;
+    font-size: 15px;
+}
+.search-fillter-des > div{
+    display: flex;
+    gap: 10px;
+}
+.search-fillter-des a{
+    background-color: #C1CFA1;
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.2s ease-in;
+}
+.search-fillter-des a:hover{
+    background-color: #3e5b3f;
+    color: white;
+    transition: 0.2s ease-out;
+}
+.a-pro a{
+    display: block;
+    text-decoration: none;
+    margin: 10px 0px;
+    color: #3e5b3f;
+}
+.shop-pro-list{
+    margin: 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.a-pro{
+    padding: 10px;
+    background: white;
+    border: 1px solid rgb(195, 195, 195);
+    box-shadow: 0px 0px 2px 2px rgb(240, 240, 240);
+    border-radius: 5px;
+    transition: 0.2s ease-out;
+}
+.a-pro:hover{
+    box-shadow: 0px 0px 10px 2px #c1cfa1;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+    border-color: #425843;
+}
+@media (max-width: 400px){
+    .shop-main{
+        grid-template-columns: repeat(1,1fr);
+    }
+    aside{
+        width: 100%;
+    }
+    article{
+        grid-column: 1/2;
+    }
+    .search-fillter-des{
+        flex-direction: column;
+    }
+    .search-fillter-des > div{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .search-fillter-des > div{
+        width: 100%;
+        text-align: center;
+    }
+    .search-fillter-des > div a{
+        padding: 10px;
+    }
+    .shop-pro-list{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .head-mobi{
+        display: block;
+        background-image: url('../image/banner-shop.png');
+        padding: 20px 20px 150px 20px;
+        background-size: cover;
+    }
+    .search-fillter-des form{
+        width: 100%;
+    }
+    .search-fillter-des form input{
+        width: 100%;
+    }
+}
